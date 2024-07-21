@@ -1,0 +1,26 @@
+[
+  {
+    "title": "ATLAS",
+    "description": "Get the ATLAS app for secure, real-time communication. Download the right APK for your device on our website. Enjoy encrypted chats, typing indicators, status updates, nearby user discovery, and easy sharing of documents, audio, and images. Use Techie for instant help. Choose ATLAS for a top-notch messaging experience.",
+    "source": "https://github.com/vishnu-git1524/atlas_web",
+    "preview": "atlas-download.netlify.app",
+    "tags": ["flutter", "dart", "android app"],
+    "thumbnail": "atlas.jpg"
+  },
+  {
+    "title": "Text-Encrypt-and-Decryptor",
+    "description": "Text Encryption and Decryption Web Application! This project provides a simple and effective way to encrypt and decrypt text using AES 256-bit encryption. It's designed to be user-friendly, with features like password visibility toggles, random password generation, and options to download decrypted text.",
+    "source": "https://github.com/vishnu-git1524/Text-Encrypt-and-Decryptor",
+    "preview": "https://text-encrypt.netlify.app/",
+    "tags": ["html", "bootstrap", "js", "AES"],
+    "thumbnail": "text-encrypt.jpg"
+  },
+  {
+    "title": "chatbot",
+    "description": "This project involves creating a chatbot using the Flask framework, which is a lightweight and flexible web framework written in Python. The chatbot will use the Gemini API to handle user inputs and provide appropriate responses.",
+    "source": "https://github.com/vishnu-git1524/chatbot",
+    "preview": "https://github.com/vishnu-git1524/chatbot",
+    "tags": ["python", "html", "geminiAI", "api"],
+    "thumbnail": "chatbot.jpg"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "title": "Vishnu Venkat.G"
+  },
+  "hero": {
+    "title": "Developer",
+    "text": "Hi, I'm Vishnu Venkat.G",
+    "image": "profile.jpg"
+  },
+  "about": {
+    "title": "A dedicated Developer | Programmer",
+    "text": "From my early days of coding, I've been fascinated by the power of application and web development. I currently specialize in Dart, JavaScript, and am proficient in frameworks like Flutter and React. My toolkit also includes HTML, CSS, Git, and Firebase, which help me build robust, user-friendly applications.",
+    "subtitle": "About Me",
+    "image": "profile.jpg"
+  },
+  "portfolio": {
+    "title": "Each project is a unique piece of development",
+    "subtitle": "PORTFOLIO"
+  },
+  "contact": {
+    "title": "Don't be shy! Hit me up! 👇",
+    "subtitle": "CONTACT"
+  }
+}

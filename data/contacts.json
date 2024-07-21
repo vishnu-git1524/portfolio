@@ -1,0 +1,21 @@
+[
+  {
+    "icon": "bx bx-at",
+    "title": "Email",
+    "link": "mailto:vishnuvenkat1524@gmail.com",
+    "text": "vishnuvenkat1524@gmail.com"
+  },
+  {
+    "icon": "bx bxl-github",
+    "title": "GitHub",
+    "link": "https://github.com/vishnu-git1524",
+    "text": "github.com/vishnu-git1524"
+  },
+  {
+    "icon": "bx bxl-linkedin",
+    "title": "LinkedIn",
+    "link": "https://www.linkedin.com/in/vishnu-venkat-g/",
+    "text": "linkedin.com/in/vishnu-venkat-g"
+  }
+]
+

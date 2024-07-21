@@ -1,0 +1,9 @@
+[
+  { "title": "HTML", "icon": "devicon-html5-plain colored" },
+  { "title": "CSS", "icon": "devicon-css3-plain colored" },
+  { "title": "JavaScript", "icon": "devicon-javascript-plain colored" },
+  { "title": "Node JS", "icon": "devicon-nodejs-plain colored" },
+  { "title": "Dart", "icon": "devicon-dart-plain colored" },
+  { "title": "Firebase", "icon": "devicon-firebase-plain colored" },
+  { "title": "Flutter", "icon": "devicon-flutter-plain colored" }
+]

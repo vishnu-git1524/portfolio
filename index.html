@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= website.title %></title>
+    <link rel="icon" type="image/x-icon" href="profile.jpg">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- devicons css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <!-- boxicons css -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- custom js -->
+    <script type="module" defer src="./scripts/app.js"></script>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="/" class="navbar_brand"><%= sections.nav.title %></a>
+        <button
+          title="Open Menu"
+          type="button"
+          class="navbar_toggler"
+          id="menuToggler"
+        >
+          <i class="bx bx-menu"></i>
+        </button>
+        <ul class="navbar_links" id="mobileMenu">
+          <% nav.forEach((item) => { %>
+          <li>
+            <a title="<%= item.title %>" href="<%= item.link %>">
+              <%= item.title %>
+            </a>
+          </li>
+          <% }); %>
+        </ul>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero section start -->
+    <header id="home" class="hero scroll-mt-10">
+      <div class="container">
+        <!-- text content -->
+        <div class="hero_content">
+          <h2 class="hero_title"><%= sections.hero.title %></h2>
+          <p class="hero_text"><%= sections.hero.text %></p>
+          <div class="hero_links">
+            <% socials.forEach((item) => { %>
+            <a
+              href="<%= item.link %>"
+              title="<%= item.title %>"
+              target="_blank"
+            >
+              <i class="<%= item.icon %>"></i>
+            </a>
+            <% }); %>
+          </div>
+        </div>
+
+        <!-- avatar -->
+        <div class="hero_avatar">
+          <img
+            src="<%= sections.hero.image %>"
+            alt="<%= sections.hero.title %>"
+          />
+        </div>
+      </div>
+    </header>
+    <!-- hero section end -->
+
+    <!-- tech stack section start -->
+    <div class="tech-stack">
+      <div class="container">
+        <h2 class="tech-stack_title">Tech Stack</h2>
+        <div class="tech-stack_divider"></div>
+        <div class="tech-stack_content">
+          <% skills.forEach((skill) => { %>
+          <div class="tech-stack_item" title="<%= skill.title %>">
+            <i class="<%= skill.icon %>"></i>
+          </div>
+          <% }); %>
+        </div>
+      </div>
+    </div>
+    <!-- tech stack section end -->
+
+    <!-- about section start -->
+    <div id="about" class="about">
+      <div class="container section">
+        <!-- about image -->
+        <div class="about_img">
+          <img
+            src="<%= sections.about.image %>"
+            alt="<%= sections.about.title %>"
+          />
+        </div>
+        <!-- about text content -->
+        <div class="about_content">
+          <h3 class="section_subtitle mb-1"><%= sections.about.sutitle %></h3>
+          <h2 class="section_title mb-5"><%= sections.about.title %></h2>
+          <p class="about_text"><%= sections.about.text %></p>
+        </div>
+      </div>
+    </div>
+    <!-- about section end -->
+
+    <!-- portfolio section start -->
+    <div id="portfolio" class="portfolio">
+      <div class="container section">
+        <h3 class="section_subtitle mb-1">
+          <%= sections.portfolio.subtitle %>
+        </h3>
+        <h2 class="section_title mb-16"><%= sections.portfolio.title %></h2>
+
+        <!-- portfolio cards-->
+        <div class="portfolio_cards">
+          <% projects.forEach((project) => { %>
+          <div class="portfolio_card">
+            <div class="portfolio_card_media">
+              <img src="<%= project.thumbnail %>" alt="<%= project.title %>" />
+            </div>
+            <div class="portfolio_card_body">
+              <div class="portfolio_card_tags">
+                <% project.tags.forEach((tag) => { %>
+                <span>#<%= tag %></span>
+                <% }); %>
+              </div>
+              <h2 class="portfolio_card_title"><%= project.title %></h2>
+              <p class="portfolio_card_text"><%= project.description %></p>
+
+              <div class="portfolio_card_links">
+                <a
+                  href="<%= project.source %>"
+                  target="_blank"
+                  class="portfolio_card_link"
+                  >Source Code <i class="bx bx-git-branch"></i>
+                </a>
+                <a
+                  href="<%= project.preview %>"
+                  target="_blank"
+                  class="portfolio_card_link primary"
+                  >Preview <i class="bx bx-link-external"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <% }); %>
+        </div>
+      </div>
+    </div>
+    <!-- portfolio section end -->
+
+    <!-- contact section start -->
+    <div id="contact" class="contact bg-white">
+      <div class="container section">
+        <h3 class="section_subtitle mb-1"><%= sections.contact.subtitle %></h3>
+        <h2 class="section_title mb-5"><%= sections.contact.title %></h2>
+
+        <!-- contact cards -->
+        <div class="contact_cards mt-16">
+          <% contacts.forEach((contact) => { %>
+          <div class="contact_card">
+            <div class="contact_card_icon">
+              <i class="<%= contact.icon %> text-3xl md:text-4xl"></i>
+            </div>
+            <div class="contact_card_body">
+              <h2 class="contact_card_title"><%= contact.title %></h2>
+              <a
+                href="<%= contact.link %>"
+                target="_blank"
+                class="contact_card_text"
+                title="<%= contact.title  %>"
+              >
+                <%= contact.text %>
+              </a>
+            </div>
+          </div>
+          <% }); %>
+        </div>
+      </div>
+    </div>
+    <!-- contact section end -->
+
+    <!-- footer section start -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer_text">
+          Copyright ©<%= new Date().getFullYear() %>. All rights are reserved
+        </p>
+
+        <div class="footer_links">
+          <% socials.forEach((item) => { %>
+          <a href="<%= item.link %>" title="<%= item.title %>">
+            <i class="<%= item.icon %>"></i>
+          </a>
+          <% }); %>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end -->
+  </body>
+</html>
