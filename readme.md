@@ -17,7 +17,11 @@ Follow these instructions to get a copy of the project up and running on your lo
    ```sh
    git clone https://github.com/your-username/your-repo-name.git
 
-   cd your-repo-name
+2. Navigate to the project directory:
+    ```sh
+    cd your-repo-name
 
-   npm install
+3. Install Dependencies:
+    ```sh
+    npm install
 
