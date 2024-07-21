@@ -1,8 +1,23 @@
-# Introy - Clean Portfolio Template
+# 🌐 My Personal Portfolio
 
-This is a clean & minimal portfolio template for freshers. This template will showcase about you, your skills and your projects.
+Welcome to my personal portfolio website! This project showcases my skills, projects, and contact information.
 
-big shoutout to [Stefan Topalovic](https://stefantopalovicdev.vercel.app/). this template is inspired actually copied from his portfolio.
+## 🚀 Getting Started
 
-- live: https://introy.netlify.app/
-- developer: [Tonmoy Deb](https://tonmoydeb.com)
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+### 📋 Prerequisites
+
+- Node.js
+- NPM
+
+### 🔧 Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/your-repo-name.git
+
+   cd your-repo-name
+
+   npm install
+
