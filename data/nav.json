@@ -2,5 +2,7 @@
   { "title": "Home", "link": "/#home" },
   { "title": "About", "link": "/#about" },
   { "title": "Projects", "link": "/#portfolio" },
+  { "title": "Learnings", "link": "/#courses" },
+  { "title": "Education", "link": "/#education" },
   { "title": "Contact", "link": "/#contact" }
 ]

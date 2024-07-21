@@ -17,6 +17,37 @@
     "title": "Each project is a unique piece of development",
     "subtitle": "PORTFOLIO"
   },
+  "courses": {
+    "title": "My Learning Journey",
+    "subtitle": "COURSES",
+    "text": "I believe in continuous learning and have completed several online courses to enhance my skills and stay updated with the latest technologies.",
+    "list": [
+      {
+        "name": "Java Programming",
+        "platform": "Great Learning",
+        "platformLink": "https://www.mygreatlearning.com/",
+        "description": "An in-depth Java course that covers everything from basics to advanced",
+        "certificateLink": "https://www.mygreatlearning.com/certificate/EFNVPUKC"
+      }
+    ]
+  },
+  "education": {
+    "title": "My Educational Journey",
+    "subtitle": "EDUCATION",
+    "list": [
+      {
+        "institution": "Sri Chaitaya Junior College",
+        "degree": "XI and XII (Secondary Education)",
+        "description": "A comprehensive program covering essential subjects for secondary education, including a focus on preparing students for higher studies and various career paths."
+      },
+      {
+        "institution": "Sri Ramaswamy Memorial (SRM)",
+        "degree": "Bachelor of Technology (B.Tech) in Computer Science and Engineering with specialization in IoT",
+        "period": "August 2024 - Present",
+        "description": "Comprehensive B.Tech program in Computer Science with a focus on IoT, covering core concepts and practical applications."
+      }      
+    ]
+  },
   "contact": {
     "title": "Don't be shy! Hit me up! 👇",
     "subtitle": "CONTACT"
