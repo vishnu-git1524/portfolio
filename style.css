@@ -1,130 +1,165 @@
 .courses_list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    /* Adds spacing between each course item */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* Adds spacing between each course item */
 }
 
 .course_item {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .course_name {
-    color: #333;
-    /* Makes the course name dark */
-    font-weight: bold;
+  color: #333;
+  /* Makes the course name dark */
+  font-weight: bold;
 }
 
 .course_platform {
-    display: inline-block;
-    margin-top: 10px;
-    /* Adds spacing above the link */
-    color: #007bff;
-    /* Change link color */
-    text-decoration: none;
-    /* Adds underline */
-    font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  /* Adds spacing above the link */
+  color: #007bff;
+  /* Change link color */
+  text-decoration: none;
+  /* Adds underline */
+  font-weight: bold;
 }
 
 .course_platform:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .course_certificate_link {
-    display: inline-block;
-    margin-top: 10px;
-    /* Adds spacing above the link */
-    color: #007bff;
-    /* Change link color */
-    text-decoration: none;
-    font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  /* Adds spacing above the link */
+  color: #007bff;
+  /* Change link color */
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .course_certificate_link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .education {
-    padding: 60px 0;
-    background-color: #f9f9f9;
-  }
-  
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.education_timeline {
+  position: relative;
+  padding: 0;
+  margin-left: 30px;
+  border-left: 2px solid #ddd;
+  /* Light gray vertical line */
+}
+
+.timeline_item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+.timeline_dot {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #007bff;
+  /* Elegant dot color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Shadow for depth */
+}
+
+.timeline_content {
+  padding: 10px 20px;
+  background: #fff;
+  /* White background for content */
+  border-radius: 6px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Soft shadow for content */
+  position: relative;
+}
+
+.timeline_content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 10px;
+  height: 100%;
+  background: #007bff;
+  /* Line connecting dot and content */
+  border-radius: 4px;
+}
+
+.timeline_period {
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.timeline_title {
+  font-size: 1.3em;
+  margin: 0;
+  color: #333;
+}
+
+.timeline_description {
+  margin-top: 10px;
+  color: #666;
+  font-size: 0.95em;
+}
+
+@media (max-width: 768px) {
   .education_timeline {
-    position: relative;
-    padding: 0;
-    margin-left: 30px;
-    border-left: 2px solid #ddd; /* Light gray vertical line */
+    margin-left: 0;
+    padding-left: 0;
   }
-  
+
   .timeline_item {
-    position: relative;
-    margin-bottom: 40px;
-    padding-left: 20px;
+    padding-left: 15px;
   }
-  
+
   .timeline_dot {
-    position: absolute;
-    left: -10px;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #007bff; /* Elegant dot color */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    left: -8px;
   }
-  
-  .timeline_content {
-    padding: 10px 20px;
-    background: #fff; /* White background for content */
-    border-radius: 6px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for content */
-    position: relative;
-  }
-  
-  .timeline_content::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -20px;
-    width: 10px;
-    height: 100%;
-    background: #007bff; /* Line connecting dot and content */
-    border-radius: 4px;
-  }
-  
-  .timeline_period {
-    font-weight: 600;
-    color: #555;
-    margin-bottom: 5px;
-  }
-  
-  .timeline_title {
-    font-size: 1.3em;
-    margin: 0;
-    color: #333;
-  }
-  
-  .timeline_description {
-    margin-top: 10px;
-    color: #666;
-    font-size: 0.95em;
-  }
-  
-  @media (max-width: 768px) {
-    .education_timeline {
-      margin-left: 0;
-      padding-left: 0;
-    }
-  
-    .timeline_item {
-      padding-left: 15px;
-    }
-  
-    .timeline_dot {
-      left: -8px;
-    }
-  }
-  
+}
+
+.hero_cv_button {
+  margin-top: 20px;
+  /* Adjust the space above the button */
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid transparent;
+  /* Default border to maintain button size consistency */
+}
+
+.btn-primary {
+  background-color: black;
+  color: white;
+  border-color: black;
+  /* Set initial border color to match the background */
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+  /* Add black border on hover */
+}

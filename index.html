@@ -52,31 +52,40 @@
   <!-- navbar end -->
 
   <!-- hero section start -->
-  <header id="home" class="hero scroll-mt-10">
-    <div class="container">
-      <!-- text content -->
-      <div class="hero_content">
-        <h2 class="hero_title">
-          <%= sections.hero.title %>
-        </h2>
-        <p class="hero_text">
-          <%= sections.hero.text %>
-        </p>
-        <div class="hero_links">
-          <% socials.forEach((item)=> { %>
-            <a href="<%= item.link %>" title="<%= item.title %>" target="_blank">
-              <i class="<%= item.icon %>"></i>
-            </a>
-            <% }); %>
-        </div>
+<!-- hero section start -->
+<header id="home" class="hero scroll-mt-10">
+  <div class="container">
+    <!-- text content -->
+    <div class="hero_content">
+      <h2 class="hero_title">
+        <%= sections.hero.title %>
+      </h2>
+      <p class="hero_text">
+        <%= sections.hero.text %>
+      </p>
+      <div class="hero_links">
+        <% socials.forEach((item)=> { %>
+          <a href="<%= item.link %>" title="<%= item.title %>" target="_blank">
+            <i class="<%= item.icon %>"></i>
+          </a>
+        <% }); %>
       </div>
-
-      <!-- avatar -->
-      <div class="hero_avatar">
-        <img src="<%= sections.hero.image %>" alt="<%= sections.hero.title %>" />
+      <!-- Button to download CV -->
+      <div class="hero_cv_button">
+        <a href="" class="btn btn-primary" title="Download CV" download>
+          <i class="bx bx-download"></i> Download CV
+        </a>
       </div>
     </div>
-  </header>
+
+    <!-- avatar -->
+    <div class="hero_avatar">
+      <img src="<%= sections.hero.image %>" alt="<%= sections.hero.title %>" />
+    </div>
+  </div>
+</header>
+<!-- hero section end -->
+
   <!-- hero section end -->
 
   <!-- tech stack section start -->
