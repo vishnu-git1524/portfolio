@@ -3,7 +3,7 @@
     "title": "ATLAS",
     "description": "Get the ATLAS app for secure, real-time communication. Download the right APK for your device on our website. Enjoy encrypted chats, typing indicators, status updates, nearby user discovery, and easy sharing of documents, audio, and images. Use Techie for instant help. Choose ATLAS for a top-notch messaging experience.",
     "source": "https://github.com/vishnu-git1524/atlas_web",
-    "preview": "atlas-download.netlify.app",
+    "preview": "https://atlas-download.netlify.app/",
     "tags": ["flutter", "dart", "android app"],
     "thumbnail": "atlas.jpg"
   },
