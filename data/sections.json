@@ -28,6 +28,13 @@
         "platformLink": "https://www.mygreatlearning.com/",
         "description": "An in-depth Java course that covers everything from basics to advanced",
         "certificateLink": "https://www.mygreatlearning.com/certificate/EFNVPUKC"
+      },
+      {
+        "name": "Android Application Development",
+        "platform": "Great Learning",
+        "platformLink": "https://www.mygreatlearning.com/",
+        "description": "An in-depth Android Application Development course that covers everything from basics to advanced",
+        "certificateLink": "https://www.mygreatlearning.com/certificate/RSPCZUCT"
       }
     ]
   },
