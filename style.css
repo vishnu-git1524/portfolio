@@ -1,137 +1,133 @@
-.courses_list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  /* Adds spacing between each course item */
-}
-
-.course_item {
+/* General Section Styles */
+.courses-section {
+  padding: 40px 20px;
   background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.course_name {
+.courses-header {
+  margin-bottom: 40px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
   color: #333;
-  /* Makes the course name dark */
-  font-weight: bold;
+  margin-bottom: 0;
 }
 
-.course_platform {
+.courses-description {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.courses-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.course-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.course-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.course-platform {
   display: inline-block;
-  margin-top: 10px;
-  /* Adds spacing above the link */
+  font-size: 1rem;
   color: #007bff;
-  /* Change link color */
   text-decoration: none;
-  /* Adds underline */
-  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-.course_platform:hover {
+.course-platform:hover {
   text-decoration: underline;
 }
 
-.course_certificate_link {
-  display: inline-block;
-  margin-top: 10px;
-  /* Adds spacing above the link */
-  color: #007bff;
-  /* Change link color */
-  text-decoration: none;
-  font-weight: bold;
+.course-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
 }
 
-.course_certificate_link:hover {
+.course-certificate-link {
+  display: inline-block;
+  font-size: 1rem;
+  color: #28a745;
+  text-decoration: none;
+}
+
+.course-certificate-link:hover {
   text-decoration: underline;
 }
+
 
 .education {
   padding: 60px 0;
   background-color: #f9f9f9;
 }
 
-.education_timeline {
-  position: relative;
-  padding: 0;
-  margin-left: 30px;
-  border-left: 2px solid #ddd;
-  /* Light gray vertical line */
+.education_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-.timeline_item {
-  position: relative;
-  margin-bottom: 40px;
-  padding-left: 20px;
-}
-
-.timeline_dot {
-  position: absolute;
-  left: -10px;
-  top: 0;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #007bff;
-  /* Elegant dot color */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* Shadow for depth */
-}
-
-.timeline_content {
-  padding: 10px 20px;
-  background: #fff;
-  /* White background for content */
-  border-radius: 6px;
-  /* Rounded corners */
+.education_card {
+  background-color: #fff;
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Soft shadow for content */
-  position: relative;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.timeline_content::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -20px;
-  width: 10px;
-  height: 100%;
-  background: #007bff;
-  /* Line connecting dot and content */
-  border-radius: 4px;
+.education_card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.timeline_period {
-  font-weight: 600;
+.education_institution {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.education_degree {
+  font-size: 1.2em;
   color: #555;
   margin-bottom: 5px;
 }
 
-.timeline_title {
-  font-size: 1.3em;
-  margin: 0;
-  color: #333;
+.education_period {
+  font-weight: 600;
+  color: #777;
+  margin-bottom: 10px;
 }
 
-.timeline_description {
-  margin-top: 10px;
+.education_description {
   color: #666;
-  font-size: 0.95em;
+  line-height: 1.6;
 }
 
 @media (max-width: 768px) {
-  .education_timeline {
-    margin-left: 0;
-    padding-left: 0;
-  }
-
-  .timeline_item {
-    padding-left: 15px;
-  }
-
-  .timeline_dot {
-    left: -8px;
+  .education_cards {
+    grid-template-columns: 1fr;
   }
 }
 

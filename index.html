@@ -22,6 +22,7 @@
   <!-- boxicons css -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
+
   <!-- custom css -->
   <link rel="stylesheet" href="./style/style.css" />
   <!-- custom js -->
@@ -52,39 +53,38 @@
   <!-- navbar end -->
 
   <!-- hero section start -->
-<!-- hero section start -->
-<header id="home" class="hero scroll-mt-10">
-  <div class="container">
-    <!-- text content -->
-    <div class="hero_content">
-      <h2 class="hero_title">
-        <%= sections.hero.title %>
-      </h2>
-      <p class="hero_text">
-        <%= sections.hero.text %>
-      </p>
-      <div class="hero_links">
-        <% socials.forEach((item)=> { %>
-          <a href="<%= item.link %>" title="<%= item.title %>" target="_blank">
-            <i class="<%= item.icon %>"></i>
+  <header id="home" class="hero scroll-mt-10">
+    <div class="container">
+      <!-- text content -->
+      <div class="hero_content">
+        <h2 class="hero_title">
+          <%= sections.hero.title %>
+        </h2>
+        <p class="hero_text">
+          <%= sections.hero.text %>
+        </p>
+        <div class="hero_links">
+          <% socials.forEach((item)=> { %>
+            <a href="<%= item.link %>" title="<%= item.title %>" target="_blank">
+              <i class="<%= item.icon %>"></i>
+            </a>
+            <% }); %>
+        </div>
+        <!-- Button to download CV -->
+        <div class="hero_cv_button">
+          <a href="" class="btn btn-primary" title="Download CV" download>
+            <i class="bx bx-download"></i> Download CV
           </a>
-        <% }); %>
+        </div>
       </div>
-      <!-- Button to download CV -->
-      <div class="hero_cv_button">
-        <a href="" class="btn btn-primary" title="Download CV" download>
-          <i class="bx bx-download"></i> Download CV
-        </a>
-      </div>
-    </div>
 
-    <!-- avatar -->
-    <div class="hero_avatar">
-      <img src="<%= sections.hero.image %>" alt="<%= sections.hero.title %>" />
+      <!-- avatar -->
+      <div class="hero_avatar">
+        <img src="<%= sections.hero.image %>" alt="<%= sections.hero.title %>" />
+      </div>
     </div>
-  </div>
-</header>
-<!-- hero section end -->
+  </header>
+  <!-- hero section end -->
 
   <!-- hero section end -->
 
@@ -174,37 +174,41 @@
   <!-- portfolio section end -->
 
   <!-- courses section start -->
-  <div id="courses" class="courses">
-    <div class="container section">
-      <h3 class="section_subtitle mb-1">
-        <%= sections.courses.subtitle %>
-      </h3>
-      <h2 class="section_title mb-5">
-        <%= sections.courses.title %>
-      </h2>
-      <p class="courses_text">
+  <div id="courses" class="courses-section">
+    <div class="container">
+      <div class="courses-header text-center mb-5">
+        <h3 class="section-subtitle">
+          <%= sections.courses.subtitle %>
+        </h3>
+        <h2 class="section-title">
+          <%= sections.courses.title %>
+        </h2>
+      </div>
+
+      <p class="courses-description text-center mb-4">
         <%= sections.courses.text %>
       </p>
 
       <!-- courses list -->
-      <div class="courses_list">
+      <div class="courses-list">
         <% sections.courses.list.forEach((course)=> { %>
-          <div class="course_item">
-            <h3 class="course_name">
+          <div class="course-card">
+            <h3 class="course-title">
               <%= course.name %>
             </h3>
-            <a href="<%= course.platformLink %>" target="_blank" class="course_platform">
+            <a href="<%= course.platformLink %>" target="_blank" class="course-platform">
               <%= course.platform %>
             </a>
-            <p class="course_description">
+            <p class="course-description">
               <%= course.description %>
             </p>
-            <a href="<%= course.certificateLink %>" target="_blank" class="course_certificate_link">View Certificate</a>
+            <a href="<%= course.certificateLink %>" target="_blank" class="course-certificate-link">View Certificate</a>
           </div>
           <% }); %>
       </div>
     </div>
   </div>
+  <!-- courses section end -->
 
   <!-- courses section end -->
 
@@ -217,31 +221,28 @@
         <%= sections.education.title %>
       </h2>
 
-      <!-- education timeline -->
-      <div class="education_timeline">
+      <!-- education cards -->
+      <div class="education_cards">
         <% sections.education.list.forEach((education)=> { %>
-          <div class="timeline_item">
-            <div class="timeline_dot"></div>
-            <div class="timeline_content">
-              <h3 class="timeline_title">
-                <%= education.institution %>
-              </h3>
-              <p class="timeline_degree">
-                <%= education.degree %>
-              </p>
-              <br>
-              <p class="timeline_period">
-                <%= education.period %>
-              </p>
-              <p class="timeline_description">
-                <%= education.description %>
-              </p>
-            </div>
+          <div class="education_card">
+            <h3 class="education_institution">
+              <%= education.institution %>
+            </h3>
+            <p class="education_degree">
+              <%= education.degree %>
+            </p>
+            <p class="education_period">
+              <%= education.period %>
+            </p>
+            <p class="education_description">
+              <%= education.description %>
+            </p>
           </div>
           <% }); %>
       </div>
     </div>
   </div>
+
 
 
   <!-- contact section start -->
@@ -293,6 +294,10 @@
     </div>
   </footer>
   <!-- footer section end -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
