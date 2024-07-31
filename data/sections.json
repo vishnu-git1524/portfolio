@@ -42,6 +42,13 @@
         "platformLink": "https://www.mygreatlearning.com/",
         "description": "An in-depth Python Fundamentals for Beginners course that covers everything from basics to advanced",
         "certificateLink": "https://www.mygreatlearning.com/certificate/IEIPCQWT"
+      },
+      {
+        "name": "Python",
+        "platform": "HackerRank",
+        "platformLink": "https://www.hackerrank.com/",
+        "description": "It covers topics like Scalar Types, Operators and Control Flow, Strings, Collections and Iteration, Modularity, Objects and Types and Classes",
+        "certificateLink": "https://www.hackerrank.com/certificates/e8a070b19785"
       }
     ]
   },
