@@ -35,6 +35,13 @@
         "platformLink": "https://www.mygreatlearning.com/",
         "description": "An in-depth Android Application Development course that covers everything from basics to advanced",
         "certificateLink": "https://www.mygreatlearning.com/certificate/RSPCZUCT"
+      },
+      {
+        "name": "Python Fundamentals for Beginners",
+        "platform": "Great Learning",
+        "platformLink": "https://www.mygreatlearning.com/",
+        "description": "An in-depth Python Fundamentals for Beginners course that covers everything from basics to advanced",
+        "certificateLink": "https://www.mygreatlearning.com/certificate/IEIPCQWT"
       }
     ]
   },
