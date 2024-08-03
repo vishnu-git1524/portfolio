@@ -49,7 +49,15 @@
         "platformLink": "https://www.hackerrank.com/",
         "description": "It covers topics like Scalar Types, Operators and Control Flow, Strings, Collections and Iteration, Modularity, Objects and Types and Classes",
         "certificateLink": "https://www.hackerrank.com/certificates/e8a070b19785"
+      },
+      {
+        "name": "Problem Solving",
+        "platform": "HackerRank",
+        "platformLink": "https://www.hackerrank.com/",
+        "description": "It covers basic topics of Data Structures (such as Arrays, Strings) and Algorithms (such as Sorting and Searching)",
+        "certificateLink": "https://www.hackerrank.com/certificates/1e46b77f50ab"
       }
+      
     ]
   },
   "education": {
