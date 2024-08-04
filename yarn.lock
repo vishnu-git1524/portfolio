@@ -76,6 +76,11 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
+"@types/web-animations-js@^2.2.16":
+  version "2.2.16"
+  resolved "https://registry.npmjs.org/@types/web-animations-js/-/web-animations-js-2.2.16.tgz"
+  integrity sha512-ATELeWMFwj8eQiH0KmvsCl1V2lu/qx/CjOBmv4ADSZS5u8r4reMyjCXtxG7khqyiwH3IOMNdrON/Ugn94OUcRA==
+
 acorn@^8.8.2:
   version "8.11.3"
   resolved "https://registry.npmjs.org/acorn/-/acorn-8.11.3.tgz"
@@ -982,6 +987,13 @@ tslib@^2.0.3:
   version "2.6.2"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.6.2.tgz"
   integrity sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==
+
+typeit@^8.8.4:
+  version "8.8.4"
+  resolved "https://registry.npmjs.org/typeit/-/typeit-8.8.4.tgz"
+  integrity sha512-bD4/PNthsYj5ObPKqkARnYA7NStbYzZDe8g5odXACmFw2HKEDWSUPv275lblz6E8REr+Ji6oll/AHKmD2ONMYA==
+  dependencies:
+    "@types/web-animations-js" "^2.2.16"
 
 universalify@^2.0.0:
   version "2.0.1"

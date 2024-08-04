@@ -14,6 +14,23 @@
   @apply text-2xl px-2 py-1 border border-neutral-200 rounded md:hidden z-[2];
 }
 
+.navbar_toggler .menu-icon {
+  @apply block; /* Show the menu icon by default */
+}
+
+.navbar_toggler .close-icon {
+  @apply hidden; /* Hide the close icon by default */
+}
+
+.navbar_toggler.active .menu-icon {
+  @apply hidden; /* Hide the menu icon when active */
+}
+
+.navbar_toggler.active .close-icon {
+  @apply block; /* Show the close icon when active */
+}
+
+
 .navbar_links {
   @apply items-center gap-x-10 font-semibold hidden md:flex;
   @apply flex flex-col absolute top-0 left-0 w-full bg-white py-8 gap-y-7 mt-[1px] -translate-y-full duration-300;
@@ -21,7 +38,7 @@
 }
 
 .navbar_links.show {
-  @apply top-full translate-y-0 -z-[1];
+  @apply top-full translate-y-0; /* Adjust for visibility */
 }
 
 .navbar_links a {

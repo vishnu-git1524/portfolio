@@ -15,5 +15,7 @@
     "vite": "^4.2.0",
     "vite-plugin-html": "^3.2.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "typeit": "^8.8.4"
+  }
 }

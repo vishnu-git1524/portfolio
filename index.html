@@ -37,8 +37,10 @@
         <%= sections.nav.title %>
       </a>
       <button title="Open Menu" type="button" class="navbar_toggler" id="menuToggler">
-        <i class="bx bx-menu"></i>
+        <i class="bx bx-menu menu-icon"></i>
+        <i class="bx bx-x close-icon"></i>
       </button>
+      
       <ul class="navbar_links" id="mobileMenu">
         <% nav.forEach((item)=> { %>
           <li>
@@ -58,7 +60,7 @@
       <!-- text content -->
       <div class="hero_content">
         <h2 class="hero_title">
-          <%= sections.hero.title %>
+          
         </h2>
         <p class="hero_text">
           <%= sections.hero.text %>
