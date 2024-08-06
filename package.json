@@ -16,6 +16,7 @@
     "vite-plugin-html": "^3.2.2"
   },
   "dependencies": {
+    "highlight.js": "^11.10.0",
     "typeit": "^8.8.4"
   }
 }

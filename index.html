@@ -11,7 +11,7 @@
 
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />z
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
@@ -40,7 +40,7 @@
         <i class="bx bx-menu menu-icon"></i>
         <i class="bx bx-x close-icon"></i>
       </button>
-      
+
       <ul class="navbar_links" id="mobileMenu">
         <% nav.forEach((item)=> { %>
           <li>
@@ -60,7 +60,7 @@
       <!-- text content -->
       <div class="hero_content">
         <h2 class="hero_title">
-          
+
         </h2>
         <p class="hero_text">
           <%= sections.hero.text %>
@@ -126,180 +126,186 @@
         </p>
       </div>
     </div>
-  </div>
-  <!-- about section end -->
-
-  <!-- portfolio section start -->
-  <div id="portfolio" class="portfolio">
-    <div class="container section">
-      <h3 class="section_subtitle mb-1">
-        <%= sections.portfolio.subtitle %>
-      </h3>
-      <h2 class="section_title mb-16">
-        <%= sections.portfolio.title %>
-      </h2>
-
-      <!-- portfolio cards-->
-      <div class="portfolio_cards">
-        <% projects.forEach((project)=> { %>
-          <div class="portfolio_card">
-            <div class="portfolio_card_media">
-              <img src="<%= project.thumbnail %>" alt="<%= project.title %>" />
-            </div>
-            <div class="portfolio_card_body">
-              <div class="portfolio_card_tags">
-                <% project.tags.forEach((tag)=> { %>
-                  <span>#<%= tag %></span>
-                  <% }); %>
-              </div>
-              <h2 class="portfolio_card_title">
-                <%= project.title %>
-              </h2>
-              <p class="portfolio_card_text">
-                <%= project.description %>
-              </p>
-
-              <div class="portfolio_card_links">
-                <a href="<%= project.source %>" target="_blank" class="portfolio_card_link">Source Code <i
-                    class="bx bx-git-branch"></i>
-                </a>
-                <a href="<%= project.preview %>" target="_blank" class="portfolio_card_link primary">Preview <i
-                    class="bx bx-link-external"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <% }); %>
-      </div>
+    <div class="iframe-container">
+      <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=verminal&wt=none&l=python&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520about%2520%253D%2520%257B%250A%2520%2520title%253A%2520%2522A%2520dedicated%2520Developer%2520%257C%2520Programmer%2522%252C%250A%2520%2520text%253A%2520%2522From%2520my%2520early%2520days%2520of%2520coding%252C%2520I%27ve%2520been%2520fascinated%2520by%2520the%2520power%2520of%2520application%2520and%2520web%2520%2509%2509%2509%2509development.%2520I%2520currently%2520specialize%2520in%2520Dart%252C%2520JavaScript%252C%2520and%2520am%2520proficient%2520in%2520frameworks%2520like%2520%2509%2509%2509Flutter%2520and%2520React.%2520My%2520toolkit%2520also%2520includes%2520HTML%252C%2520CSS%252C%2520Git%252C%2520and%2520Firebase%252C%2520which%2520help%2520me%2520build%2520%2509%2509%2509robust%252C%2520user-friendly%2520applications.%2522%252C%250A%2520%2520subtitle%253A%2520%2522About%2520Me%2522%252C%250A%257D%253B%250A%250Aconsole.log%28about%29%253B%250A"
+        style="border: 0; transform: scale(1); overflow: hidden;" sandbox="allow-scripts allow-same-origin">
+      </iframe>
     </div>
-  </div>
-  <!-- portfolio section end -->
+    <!-- about section end -->
 
-  <!-- courses section start -->
-  <div id="courses" class="courses-section">
-    <div class="container">
-      <div class="courses-header text-center mb-5">
-        <h3 class="section-subtitle">
-          <%= sections.courses.subtitle %>
+    <!-- portfolio section start -->
+    <div id="portfolio" class="portfolio">
+      <div class="container section">
+        <h3 class="section_subtitle mb-1">
+          <%= sections.portfolio.subtitle %>
         </h3>
-        <h2 class="section-title">
-          <%= sections.courses.title %>
+        <h2 class="section_title mb-16">
+          <%= sections.portfolio.title %>
         </h2>
-      </div>
 
-      <p class="courses-description text-center mb-4">
-        <%= sections.courses.text %>
-      </p>
+        <!-- portfolio cards-->
+        <div class="portfolio_cards">
+          <% projects.forEach((project)=> { %>
+            <div class="portfolio_card">
+              <div class="portfolio_card_media">
+                <img src="<%= project.thumbnail %>" alt="<%= project.title %>" />
+              </div>
+              <div class="portfolio_card_body">
+                <div class="portfolio_card_tags">
+                  <% project.tags.forEach((tag)=> { %>
+                    <span>#<%= tag %></span>
+                    <% }); %>
+                </div>
+                <h2 class="portfolio_card_title">
+                  <%= project.title %>
+                </h2>
+                <p class="portfolio_card_text">
+                  <%= project.description %>
+                </p>
 
-      <!-- courses list -->
-      <div class="courses-list">
-        <% sections.courses.list.forEach((course)=> { %>
-          <div class="course-card">
-            <h3 class="course-title">
-              <%= course.name %>
-            </h3>
-            <a href="<%= course.platformLink %>" target="_blank" class="course-platform">
-              <%= course.platform %>
-            </a>
-            <p class="course-description">
-              <%= course.description %>
-            </p>
-            <a href="<%= course.certificateLink %>" target="_blank" class="course-certificate-link">View Certificate</a>
-          </div>
-          <% }); %>
-      </div>
-    </div>
-  </div>
-  <!-- courses section end -->
-
-  <!-- courses section end -->
-
-  <div id="education" class="education">
-    <div class="container section">
-      <h3 class="section_subtitle mb-1">
-        <%= sections.education.subtitle %>
-      </h3>
-      <h2 class="section_title mb-5">
-        <%= sections.education.title %>
-      </h2>
-
-      <!-- education cards -->
-      <div class="education_cards">
-        <% sections.education.list.forEach((education)=> { %>
-          <div class="education_card">
-            <h3 class="education_institution">
-              <%= education.institution %>
-            </h3>
-            <p class="education_degree">
-              <%= education.degree %>
-            </p>
-            <p class="education_period">
-              <%= education.period %>
-            </p>
-            <p class="education_description">
-              <%= education.description %>
-            </p>
-          </div>
-          <% }); %>
-      </div>
-    </div>
-  </div>
-
-
-
-  <!-- contact section start -->
-  <div id="contact" class="contact bg-white">
-    <div class="container section">
-      <h3 class="section_subtitle mb-1">
-        <%= sections.contact.subtitle %>
-      </h3>
-      <h2 class="section_title mb-5">
-        <%= sections.contact.title %>
-      </h2>
-
-      <!-- contact cards -->
-      <div class="contact_cards mt-16">
-        <% contacts.forEach((contact)=> { %>
-          <div class="contact_card">
-            <div class="contact_card_icon">
-              <i class="<%= contact.icon %> text-3xl md:text-4xl"></i>
+                <div class="portfolio_card_links">
+                  <a href="<%= project.source %>" target="_blank" class="portfolio_card_link">Source Code <i
+                      class="bx bx-git-branch"></i>
+                  </a>
+                  <a href="<%= project.preview %>" target="_blank" class="portfolio_card_link primary">Preview <i
+                      class="bx bx-link-external"></i>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="contact_card_body">
-              <h2 class="contact_card_title">
-                <%= contact.title %>
-              </h2>
-              <a href="<%= contact.link %>" target="_blank" class="contact_card_text" title="<%= contact.title %>">
-                <%= contact.text %>
+            <% }); %>
+        </div>
+      </div>
+    </div>
+    <!-- portfolio section end -->
+
+    <!-- courses section start -->
+    <div id="courses" class="courses-section">
+      <div class="container">
+        <div class="courses-header text-center mb-5">
+          <h3 class="section-subtitle">
+            <%= sections.courses.subtitle %>
+          </h3>
+          <h2 class="section-title">
+            <%= sections.courses.title %>
+          </h2>
+        </div>
+
+        <p class="courses-description text-center mb-4">
+          <%= sections.courses.text %>
+        </p>
+
+        <!-- courses list -->
+        <div class="courses-list">
+          <% sections.courses.list.forEach((course)=> { %>
+            <div class="course-card">
+              <h3 class="course-title">
+                <%= course.name %>
+              </h3>
+              <a href="<%= course.platformLink %>" target="_blank" class="course-platform">
+                <%= course.platform %>
               </a>
+              <p class="course-description">
+                <%= course.description %>
+              </p>
+              <a href="<%= course.certificateLink %>" target="_blank" class="course-certificate-link">View
+                Certificate</a>
             </div>
-          </div>
-          <% }); %>
+            <% }); %>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- contact section end -->
+    <!-- courses section end -->
 
-  <!-- footer section start -->
-  <footer class="footer">
-    <div class="container">
-      <p class="footer_text">
-        Copyright ©<%= new Date().getFullYear() %>. All rights are reserved
-      </p>
+    <!-- courses section end -->
 
-      <div class="footer_links">
-        <% socials.forEach((item)=> { %>
-          <a href="<%= item.link %>" title="<%= item.title %>">
-            <i class="<%= item.icon %>"></i>
-          </a>
-          <% }); %>
+    <div id="education" class="education">
+      <div class="container section">
+        <h3 class="section_subtitle mb-1">
+          <%= sections.education.subtitle %>
+        </h3>
+        <h2 class="section_title mb-5">
+          <%= sections.education.title %>
+        </h2>
+
+        <!-- education cards -->
+        <div class="education_cards">
+          <% sections.education.list.forEach((education)=> { %>
+            <div class="education_card">
+              <h3 class="education_institution">
+                <%= education.institution %>
+              </h3>
+              <p class="education_degree">
+                <%= education.degree %>
+              </p>
+              <p class="education_period">
+                <%= education.period %>
+              </p>
+              <p class="education_description">
+                <%= education.description %>
+              </p>
+            </div>
+            <% }); %>
+        </div>
       </div>
     </div>
-  </footer>
-  <!-- footer section end -->
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <!-- contact section start -->
+    <div id="contact" class="contact bg-white">
+      <div class="container section">
+        <h3 class="section_subtitle mb-1">
+          <%= sections.contact.subtitle %>
+        </h3>
+        <h2 class="section_title mb-5">
+          <%= sections.contact.title %>
+        </h2>
+
+        <!-- contact cards -->
+        <div class="contact_cards mt-16">
+          <% contacts.forEach((contact)=> { %>
+            <div class="contact_card">
+              <div class="contact_card_icon">
+                <i class="<%= contact.icon %> text-3xl md:text-4xl"></i>
+              </div>
+              <div class="contact_card_body">
+                <h2 class="contact_card_title">
+                  <%= contact.title %>
+                </h2>
+                <a href="<%= contact.link %>" target="_blank" class="contact_card_text" title="<%= contact.title %>">
+                  <%= contact.text %>
+                </a>
+              </div>
+            </div>
+            <% }); %>
+        </div>
+      </div>
+    </div>
+    <!-- contact section end -->
+
+    <!-- footer section start -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer_text">
+          Copyright ©<%= new Date().getFullYear() %>. All rights are reserved
+        </p>
+
+        <div class="footer_links">
+          <% socials.forEach((item)=> { %>
+            <a href="<%= item.link %>" title="<%= item.title %>">
+              <i class="<%= item.icon %>"></i>
+            </a>
+            <% }); %>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
