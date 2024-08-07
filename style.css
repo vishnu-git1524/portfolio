@@ -159,3 +159,69 @@
   border-color: black;
   /* Add black border on hover */
 }
+
+/* Custom CSS for the portfolio section without images */
+.portfolio_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.portfolio_card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 40px);
+  /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio_card_body {
+  flex-grow: 1;
+}
+
+.portfolio_card_tags {
+  margin-bottom: 10px;
+}
+
+.portfolio_card_tags span {
+  display: inline-block;
+  background: #f0f0f0;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.portfolio_card_title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.portfolio_card_text {
+  flex-grow: 1;
+  font-size: 14px;
+  color: #666;
+}
+
+.portfolio_card_links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.portfolio_card_link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+
+.portfolio_card_link i {
+  margin-left: 5px;
+}

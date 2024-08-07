@@ -3,17 +3,3 @@
 @import "/node_modules/tailwindcss/components.css";
 @import "./custom-components.css";
 @import "/node_modules/tailwindcss/utilities.css";
-
-
-.iframe-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px; /* Adjust as needed */
-  }
-  
-  iframe {
-    width: 1024px; /* Adjust as needed */
-    height: 435px; /* Adjust as needed */
-  }
-  
