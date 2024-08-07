@@ -22,5 +22,12 @@
     "preview": "https://github.com/vishnu-git1524/chatbot",
     "tags": ["python", "html", "geminiAI", "api"],
     "thumbnail": "chatbot.jpg"
+  },
+  {
+    "title": "Cryptic",
+    "description": "Cryptic secures files of any type, like txt, js, and png, using AES-256 CBC mode encryption. It encrypts and decrypts with a user-chosen password and a program-generated IV, ensuring strong protection against unauthorized access.",
+    "source": "https://github.com/vishnu-git1524/Cryptic",
+    "preview": "https://github.com/vishnu-git1524/Cryptic",
+    "tags": ["python", "aes", "cryptography"]
   }
 ]
