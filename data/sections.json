@@ -56,6 +56,20 @@
         "platformLink": "https://www.hackerrank.com/",
         "description": "It covers basic topics of Data Structures (such as Arrays, Strings) and Algorithms (such as Sorting and Searching)",
         "certificateLink": "https://www.hackerrank.com/certificates/1e46b77f50ab"
+      },
+      {
+        "name": "Flutter for Beginners",
+        "platform": "Great Learning",
+        "platformLink": "https://www.mygreatlearning.com/",
+        "description": "An in-depth Flutter for Beginners course that covers everything from basics to advanced",
+        "certificateLink": "https://www.mygreatlearning.com/certificate/KMAWYFIP"
+      },
+      {
+        "name": "JavaScript(Basic)",
+        "platform": "HackerRank",
+        "platformLink": "https://www.hackerrank.com/",
+        "description": "It covers topics like, Functions, Currying, Hoisting, Scope, Inheritance, Events and Error Handling.",
+        "certificateLink": "https://www.hackerrank.com/certificates/75f87a372938"
       }
       
     ]
