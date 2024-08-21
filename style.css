@@ -225,3 +225,21 @@
 .portfolio_card_link i {
   margin-left: 5px;
 }
+
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 400px; /* Adjust height based on your design */
+}
+
+.parallax-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  object-fit: cover;
+  transform: translateY(0);
+  transition: transform 0.5s;
+}
