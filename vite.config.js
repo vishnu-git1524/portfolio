@@ -4,6 +4,7 @@ import nav from "./data/nav.json";
 import projects from "./data/projects.json";
 import sections from "./data/sections.json";
 import skills from "./data/skills.json";
+import tools from "./data/tools.json"
 import socials from "./data/socials.json";
 import website from "./data/website.json";
 
@@ -22,6 +23,7 @@ export default defineConfig({
           website,
           nav,
           skills,
+          tools,
           projects,
           contacts,
           sections,

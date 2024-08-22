@@ -14,15 +14,3 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .go();
   });
-
-
-window.addEventListener('scroll', function() {
-  const parallaxImage = document.querySelector('.parallax-image');
-  const scrollPosition = window.scrollY;
-  const parallaxSpeed = 0.3; // Adjust the speed of the parallax effect
-
-  // Calculate the parallax effect
-  const offset = scrollPosition * parallaxSpeed;
-  parallaxImage.style.transform = `translateY(${offset}px)`;
-});
-

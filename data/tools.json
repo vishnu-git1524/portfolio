@@ -1,0 +1,7 @@
+[
+    { "title": "Github", "icon": "devicon-github-plain colored" },
+    { "title": "VsCode", "icon": "devicon-vscode-plain colored" },
+    { "title": "AndroidStudio", "icon": "devicon-androidstudio-plain colored" },
+    { "title": "Netlify", "icon": "devicon-netlify-plain colored" }
+  ]
+  

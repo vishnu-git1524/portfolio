@@ -104,6 +104,20 @@
       </div>
     </div>
   </div>
+
+  <div class="tech-stack">
+    <div class="container">
+      <h2 class="tech-stack_title">Tools & Softwares</h2>
+      <div class="tech-stack_divider"></div>
+      <div class="tech-stack_content">
+        <% tools.forEach((skill)=> { %>
+          <div class="tech-stack_item" title="<%= skill.title %>">
+            <i class="<%= skill.icon %>"></i>
+          </div>
+          <% }); %>
+      </div>
+    </div>
+  </div>
   <!-- tech stack section end -->
 
   <!-- about section start -->
